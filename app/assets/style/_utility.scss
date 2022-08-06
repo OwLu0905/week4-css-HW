@@ -1,0 +1,75 @@
+// font relatice
+
+.text-fm-rb {
+  font-family: "Roboto";
+}
+
+.lh {
+  &-1-2 {
+    line-height: 1.2;
+  }
+  &-1-5 {
+    line-height: 1.5;
+  }
+}
+
+.text {
+  &-l {
+    font-weight: 300;
+  }
+  &-r {
+    font-weight: 400;
+  }
+  &-m {
+    font-weight: 500;
+  }
+  &-b {
+    font-weight: 700;
+  }
+  &-lb {
+    font-weight: 900;
+  }
+  &-ita {
+    font-style: italic;
+  }
+  &-14 {
+    font-size: 14px;
+  }
+  &-16 {
+    font-size: 14px;
+  }
+  &-20 {
+    font-size: 20px;
+  }
+  &-36 {
+    font-size: 36px;
+  }
+  &-48 {
+    font-size: 48px;
+  }
+  &-64 {
+    font-size: 64px;
+  }
+}
+
+// width
+.w {
+  &-48 {
+    width: 48px;
+  }
+}
+
+// margin
+.m {
+  &l-48 {
+    margin-left: 48px;
+  }
+}
+
+// padding
+.p {
+  &x-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}

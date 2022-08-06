@@ -1,0 +1,14 @@
+$md: 992px;
+$sm: 767px;
+
+@mixin pad {
+  @media (max-width: $md) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: $sm) {
+    @content;
+  }
+}
