@@ -1,10 +1,6 @@
 // font relatice
 
-.text-fm-rb {
-  font-family: "Roboto";
-}
-
-.lh {
+.text-lh {
   &-1-2 {
     line-height: 1.2;
   }
@@ -14,6 +10,25 @@
 }
 
 .text {
+  &-fm-rb {
+    font-family: "Roboto";
+  }
+  &-white {
+    color: $white;
+  }
+  &-black {
+    color: $black;
+  }
+  &-red-dark {
+    color: $red-dark;
+  }
+  &-red-medium {
+    color: $red-medium;
+  }
+  &-red-light {
+    color: $red-light;
+  }
+
   &-l {
     font-weight: 300;
   }
