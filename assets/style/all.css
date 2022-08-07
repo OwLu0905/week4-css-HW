@@ -343,13 +343,7 @@ a {
   text-decoration: none;
   color: #ffffff; }
   a:hover {
-    text-decoration: underline;
-    -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-            transform: scale(1.05);
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s; }
+    text-decoration: underline; }
 
 .container {
   max-width: 1320px;
@@ -569,6 +563,41 @@ a {
     .copyright a {
       display: inline-block; } }
 
+.pagination {
+  margin-top: -80px;
+  margin-bottom: 80px;
+  font-size: 18px;
+  font-family: "Roboto"; }
+  @media (max-width: 992px) {
+    .pagination {
+      margin-top: -40px;
+      margin-bottom: 80px; } }
+  @media (max-width: 767px) {
+    .pagination {
+      margin-bottom: 64px; } }
+  .pagination ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .pagination li {
+    border-top: 1px solid #555555;
+    border-bottom: 1px solid #555555;
+    border-left: 1px solid #555555; }
+    .pagination li:last-child {
+      border-right: 1px solid #555555; }
+  .pagination a {
+    color: #555555;
+    padding: 11px 15px;
+    text-decoration: none; }
+    .pagination a:hover {
+      color: #ffffff;
+      background-color: #000000; }
+  .pagination .last {
+    background-color: #f2f2f2; }
+
 .product-nav ul {
   max-width: 100%;
   display: -webkit-box;
@@ -625,13 +654,13 @@ a {
   width: 100%; }
 
 .product-header img {
-  min-height: 296px; }
+  min-height: 246px; }
   @media (max-width: 992px) {
     .product-header img {
-      min-height: 246px; } }
+      min-height: 186px; } }
   @media (max-width: 767px) {
     .product-header img {
-      min-height: 136px; } }
+      min-height: 126px; } }
 
 .glasses-product {
   padding-top: 80px;
@@ -664,8 +693,11 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .glasses-product .product-list {
-    width: 24%;
     margin-bottom: 80px; }
+    .glasses-product .product-list-more {
+      width: 24%; }
+    .glasses-product .product-list-less {
+      width: 32%; }
     .glasses-product .product-list img {
       margin: 0 auto;
       width: 100%; }
@@ -709,34 +741,109 @@ a {
       outline-offset: 1px;
       outline: 2px solid #aa0601; }
 
-@media (max-width: 992px) {
-  .pagination {
-    margin-top: 40px; } }
+.location-container {
+  padding-top: 80px;
+  padding-bottom: 32px; }
+  @media (max-width: 992px) {
+    .location-container {
+      padding-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .location-container {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
+  .location-container h2 {
+    font-size: 48px;
+    border-left: 8px solid #9f1213;
+    padding-left: 16px;
+    margin-bottom: 32px; }
+    @media (max-width: 767px) {
+      .location-container h2 {
+        font-size: 24px;
+        margin-bottom: 24px; } }
+  .location-container a {
+    color: #000000; }
+  .location-container label {
+    font-size: 24px; }
+    @media (max-width: 767px) {
+      .location-container label {
+        font-size: 16px; } }
+  .location-container select {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 16px;
+    margin-bottom: 40px;
+    height: 38px;
+    width: 304px; }
+    @media (max-width: 992px) {
+      .location-container select {
+        width: 304px; } }
+    @media (max-width: 767px) {
+      .location-container select {
+        width: 276px;
+        margin-left: 8px;
+        margin-bottom: 24px; } }
+  .location-container option {
+    font-size: 18px; }
 
-.pagination ul {
+.location-lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px; }
 
-.pagination li {
-  border-top: 1px solid #555555;
-  border-bottom: 1px solid #555555;
-  border-left: 1px solid #555555; }
-  .pagination li:last-child {
-    border-right: 1px solid #555555; }
+.location-item {
+  width: 33.33%;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 48px; }
+  @media (max-width: 992px) {
+    .location-item {
+      width: 50%;
+      padding-bottom: 24px; } }
+  @media (max-width: 767px) {
+    .location-item {
+      width: 100%; } }
+  .location-item h3 {
+    font-size: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid #00000020;
+    padding-left: 24px; }
+  .location-item img {
+    margin: 0 auto; }
+  .location-item p a {
+    font-size: 19px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #ffffff; }
 
-.pagination a {
-  color: #555555;
-  padding: 11px 12px;
-  text-decoration: none; }
-  .pagination a:hover {
-    color: #ffffff;
-    background-color: #000000; }
+.location-detail {
+  font-size: 20px;
+  padding: 16px 24px;
+  border-right: 1px solid #00000020;
+  border-left: 1px solid #00000020; }
+  .location-detail li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 8px; }
+  .location-detail .align-item-center {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .location-detail .align-item-center span {
+      padding-top: 2px; }
 
-.pagination .last {
-  background-color: #f2f2f2; }
+.material-symbols-outlined {
+  margin-right: 8px; }
 
 /*# sourceMappingURL=all.css.map */
