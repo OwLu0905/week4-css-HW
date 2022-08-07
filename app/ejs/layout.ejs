@@ -13,6 +13,19 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;1,900&display=swap"
     rel="stylesheet">
+
+  <!-- phone -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- clock -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <!-- location -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
   <link rel="stylesheet" href="./assets/style/all.css">
   <script>
 
@@ -25,10 +38,17 @@
     <% if( name==='product' ){ %>
       <%- include('product'); %>
         <% } %>
+
+
           <%- contents %>
-            <%- include('footer'); %>
-              <script src="./assets/js/vendors.js"></script>
-              <script src="./assets/js/all.js"></script>
+
+            <% if( pagination===true ){ %>
+              <%- include('pagination'); %>
+                <% } %>
+
+                  <%- include('footer'); %>
+                    <script src="./assets/js/vendors.js"></script>
+                    <script src="./assets/js/all.js"></script>
 </body>
 
 </html>

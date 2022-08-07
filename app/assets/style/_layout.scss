@@ -54,6 +54,7 @@
   }
 }
 
+// ! Footer
 .footer {
   background-color: $red-medium;
   color: $white;
@@ -190,5 +191,45 @@
     @include phone {
       display: inline-block;
     }
+  }
+}
+
+// ! Pagination
+.pagination {
+  margin-top: -80px;
+  margin-bottom: 80px;
+  font-size: 18px;
+  font-family: "Roboto";
+  @include pad {
+    margin-top: -40px;
+    margin-bottom: 80px;
+  }
+  @include phone {
+    margin-bottom: 64px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+  }
+  li {
+    border-top: 1px solid $gray-pagination;
+    border-bottom: 1px solid $gray-pagination;
+    border-left: 1px solid $gray-pagination;
+    &:last-child {
+      border-right: 1px solid $gray-pagination;
+    }
+  }
+  a {
+    color: $gray-pagination;
+    padding: 11px 15px;
+    text-decoration: none;
+    &:hover {
+      color: $white;
+      background-color: $black;
+    }
+  }
+  .last {
+    background-color: $gray-pagination-light;
   }
 }

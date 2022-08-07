@@ -1,0 +1,122 @@
+.location-container {
+  padding-top: 80px;
+  padding-bottom: 32px;
+  @include pad {
+    padding-bottom: 56px;
+  }
+  @include phone {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  h2 {
+    font-size: 48px;
+    border-left: 8px solid $red-logo;
+    padding-left: 16px;
+    margin-bottom: 32px;
+
+    @include phone {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  a {
+    color: $black;
+  }
+  label {
+    font-size: 24px;
+
+    @include phone {
+      font-size: 16px;
+    }
+  }
+  select {
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 16px;
+    margin-bottom: 40px;
+    height: 38px;
+    width: 304px;
+    @include pad {
+      width: 304px;
+    }
+    @include phone {
+      width: 276px;
+      margin-left: 8px;
+      margin-bottom: 24px;
+    }
+  }
+  option {
+    font-size: 18px;
+  }
+}
+
+.location-lists {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+  margin-left: -12px;
+}
+.location-item {
+  width: 33.33%;
+  padding-right: 12px;
+  padding-left: 12px;
+  padding-bottom: 48px;
+
+  @include pad {
+    width: 50%;
+    padding-bottom: 24px;
+  }
+  @include phone {
+    width: 100%;
+  }
+  h3 {
+    font-size: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid $gray-location-border;
+    padding-left: 24px;
+  }
+
+  img {
+    margin: 0 auto;
+  }
+  p {
+    a {
+      font-size: 19px;
+      text-align: center;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      margin: 0 auto;
+      background-color: $black;
+      color: $white;
+    }
+  }
+  // span {
+  //   display: block;
+  //   // max-width: 100%;
+  //   width: 18px;
+  //   margin-right: 11px;
+  // }
+}
+
+.location-detail {
+  font-size: 20px;
+
+  padding: 16px 24px;
+  border-right: 1px solid $gray-location-border;
+  border-left: 1px solid $gray-location-border;
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  .align-item-center {
+    align-items: flex-start;
+    span {
+      padding-top: 2px;
+    }
+  }
+}
+.material-symbols-outlined {
+  margin-right: 8px;
+}
